@@ -158,7 +158,7 @@ resumeautorotation(forcehotspot);
 		<option name="margin_x" value="10" type="int" />
 		<option name="margin_y" value="5" type="int" />
 		<option name="background_color" value="cfcfcf" type="string" />
-		<option name="background_alpha" value="0.83137254901960789" type="float" />
+		<option name="background_alpha" value="0.80000000000000004" type="float" />
 		<option name="item_spacer" value="5" type="int" />
 		<option name="border_radius" value="7" type="int" />
 		<option name="full_size" value="false" type="bool" />
@@ -168,7 +168,7 @@ resumeautorotation(forcehotspot);
 		<option name="item_out_border_width" value="0" type="int" />
 		<option name="item_hover_border_width" value="0" type="int" />
 		<option name="item_out_bg_color" value="cfcfcf" type="string" />
-		<option name="item_out_bg_alpha" value="0.83137254901960789" type="float" />
+		<option name="item_out_bg_alpha" value="0.80000000000000004" type="float" />
 		<option name="item_out_font_color" value="ffffff" type="string" />
 		<option name="item_out_font_family" value="Arial" type="string" />
 		<option name="item_out_font_size" value="18" type="int" />
@@ -177,7 +177,7 @@ resumeautorotation(forcehotspot);
 		<option name="item_out_font_decoration" value="normal" type="string" />
 		<option name="use_hover_effect" value="true" type="bool" />
 		<option name="item_hover_bg_color" value="f9f9f9" type="string" />
-		<option name="item_hover_bg_alpha" value="0.83137254901960789" type="float" />
+		<option name="item_hover_bg_alpha" value="0.80000000000000004" type="float" />
 		<option name="item_hover_font_color" value="ffffff" type="string" />
 		<option name="item_hover_font_family" value="Arial" type="string" />
 		<option name="item_hover_font_size" value="18" type="int" />
@@ -187,10 +187,10 @@ resumeautorotation(forcehotspot);
 		<option name="padding_main" value="10" type="int" />
 		<option name="padding_sub" value="10" type="int" />
 		<option name="item_selected_color" value="b3b3b3" type="string" />
-		<option name="item_selected_alpha" value="0.36470588235294116" type="float" />
+		<option name="item_selected_alpha" value="0.40000000000000002" type="float" />
 		
 		<option name="item_selected_hover_color" value="d7d7d7" type="string" />
-		<option name="item_selected_hover_alpha" value="0.36470588235294116" type="float" />
+		<option name="item_selected_hover_alpha" value="0.40000000000000002" type="float" />
 		
 		<option name="item_selected_font_color" value="ffffff" type="string" />
 		<option name="open_callback" value="invokeKrFunction('changeSelectedItem_panoramaMenu');" type="string" />
@@ -2101,11 +2101,6 @@ getmessage(urltoopen,logowebsiteurl);openurl(get(urltoopen),_blank);
 
 
 
-  <!-- Hide / Show Controls -->
-  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
-  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
-
-
 <action name="viewControlMoveUp">
 	if(%1,
 		if(%2,
@@ -2757,5 +2752,10 @@ getmessage(urltoopen,logowebsiteurl);openurl(get(urltoopen),_blank);
   <action name="enterFullScreenFallback">set(fullscreen,true);</action>
   
   <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
+
+  <!-- Hide / Show Controls -->
+  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
+  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
+
 
 </krpano>

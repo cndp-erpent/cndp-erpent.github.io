@@ -153,11 +153,6 @@ resumeautorotation(forcehotspot);
 
 
 
-  <!-- Hide / Show Controls -->
-  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
-  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
-
-
 <action name="viewControlMoveUp">
 	if(%1,
 		if(%2,
@@ -809,5 +804,10 @@ resumeautorotation(forcehotspot);
   <action name="enterFullScreenFallback">set(fullscreen,true);</action>
   
   <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
+
+  <!-- Hide / Show Controls -->
+  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
+  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
+
 
 </krpano>
